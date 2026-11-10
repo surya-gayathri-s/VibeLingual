@@ -1,0 +1,62 @@
+# ==============================================================================
+# VibeLingual – .gitignore
+# ==============================================================================
+
+# 1. Python virtual environments
+.venv/
+venv/
+ENV/
+env/
+env.bak/
+venv.bak/
+
+# 2. Environment variables & credentials
+.env
+.env.*
+!.env.example
+*.env
+
+# 3. Python cache files & bytecode
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+dist/
+*.egg-info/
+*.egg
+
+# 4. Streamlit cache & secrets
+.streamlit/secrets.toml
+.streamlit/*.local.toml
+
+# 5. Temporary audio files
+*.tmp
+*.temp
+temp/
+tmp/
+temp_audio/
+*.wav.tmp
+*.mp3.tmp
+
+# 6. Generated audio files (preserves media/, sample, and test audio elsewhere)
+outputs/
+generated_audio/
+
+# 7. Logs
+*.log
+logs/
+*.log.*
+
+# 8. IDE & OS-specific temporary files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+ehthumbs.db
+[Dd]esktop.ini
+$RECYCLE.BIN/
